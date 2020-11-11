@@ -1,0 +1,43 @@
+/////////
+// Resets
+/////////
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body {font: 16px Helmet, Freesans, sans-serif;}
+html, body {height: 100%}
+
+
+/////////
+// Page
+/////////
+$green: #55ff55;
+$yellow: #FFFF66;
+$red: red;
+
+body {
+  margin: 0 30px;
+  background: black;
+  color: $green;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 36px;
+}
+
+.countdown {color: #FF56F3; text-align: center; }
+.column-ctnr { display: flex; justify-content: space-between; }
+.column { margin: 20px; width: 500px; }
+.column h1 { color:white; border: 2px solid white; padding: 10px; margin-bottom: 20px; text-align: center; }
+
+.complete { color: $green }
+.incomplete { color: $red }
+h1.gold-star { color: $yellow; border-color: $yellow; }
+h1.gold-star::before { content: '★' }
+li {list-style-type: none; margin-bottom: 20px;}
